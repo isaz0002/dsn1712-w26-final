@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doughp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <div>
+        <div class="wrapper nav">
             <img src="images/doughp-logo.webp" alt="Logo of the brand that says Doughp">
             <nav>
-                <ul>
+                <ul class="ul">
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">About Us</a></li>
                 </ul>
@@ -21,61 +24,59 @@
 
     <main>
         <section>
-            <div>
-                <img src="images/product-shot-1.webp" alt="Image with a red background featuring red velvet cookie dough drops">
-                <img src="images/product-shot-2.webp" alt="Image with a red background and the red velvet cookie dough drops on plates with a hand reaching in">
-                <img src="images/product-shot-3.webp" alt="Image with a black background featuring chocolate chip cookie dough">
-                <img src="images/product-shot-4.webp" alt="Image with a black background featuring cookie dough with peanut butter kiss">
-
-                <div>
-                    <h1>Sweetheart's Affair</h1>
-                    <div>
-                        <p>Limited edition</p>
-                        <p>Red Velvet Cupcake, Peanut Butter Kiss and Chocolate Chip</p>
-                        <p>$55.00</p>
-                        <p>Introducing our delectable trio of cookie dough flavors guaranteed to tantalize your taste buds like never before! Unveiling the ultimate indulgence in every bite, our cookie dough pack offers a divine selection of three mouthwatering flavors.</p>
-                        <p>Whether you're craving a classic favorite or eager to embark on a culinary journey, this trio has something for everyone. So go ahead, treat yourself to the ultimate cookie dough experience and discover pure bliss in every spoonful!</p>
-                        <a class="cart" href="#" aria-label="Add to cart the Red Velvet Cupcake, Peanut Butter Kiss and Chocolate Chip">Add to cart</a>
+            <div class="wrapper joined">
+                
+                    <div class="image-grid">
+                        <img src="images/product-shot-1.webp" alt="Image with a red background featuring red velvet cookie dough drops">
+                        <img src="images/product-shot-2.webp" alt="Image with a red background and the red velvet cookie dough drops on plates with a hand reaching in">
+                        <img src="images/product-shot-3.webp" alt="Image with a black background featuring chocolate chip cookie dough">
+                        <img src="images/product-shot-4.webp" alt="Image with a black background featuring cookie dough with peanut butter kiss">
                     </div>
-                </div>
+
+                    <div class="affair">
+                        <h1>Sweetheart's Affair</h1>
+                        <div>
+                            <strong>Limited edition</strong>
+                            <p class="red">Red Velvet Cupcake, Peanut Butter Kiss and Chocolate Chip</p>
+                            <p>$55.00</p>
+                            <p>Introducing our delectable trio of cookie dough flavors guaranteed to tantalize your taste buds like never before! Unveiling the ultimate indulgence in every bite, our cookie dough pack offers a divine selection of three mouthwatering flavors.</p>
+                            <p>Whether you're craving a classic favorite or eager to embark on a culinary journey, this trio has something for everyone. So go ahead, treat yourself to the ultimate cookie dough experience and discover pure bliss in every spoonful!</p>
+                            <a class="cart" href="#" aria-label="Add to cart the Red Velvet Cupcake, Peanut Butter Kiss and Chocolate Chip">Add to cart</a>
+                        
+                        </div>
+                    </div>
 
             </div>
         </section>
 
-        <section>
-            <div>
-                <h2>Behind the Dough</h2>
+        <section class="behind">
+            <div class="wrapper">
+                <h2 class="dough">Behind the Dough</h2>
                 <div class="story">
-                    <article>
-                        <p>Here's the scoop from Doughp's founder on how this flavor came to be: "I first made Red Velvet on a total whim, just a few months into business in 2017. One day, while mixing up Doughp at our original commercial kitchen in Oakland, I left to grab some lunch at a nearby bakery.</p>
-                    </article>
-                    
-                    <article>
-                        <p>I saw an absolutely delicious-looking red velvet cake in their dessert case and immediately thought: I NEED to know what this tastes like in cookie dough! I bought the cake and mixed it right into a small 5lb batch of Doughp; cream cheese frosting, cake and all! HEAVEN by the spoonful!"</p>
-                    </article>
-
+                    <p>Here's the scoop from Doughp's founder on how this flavor came to be: "I first made Red Velvet on a total whim, just a few months into business in 2017. One day, while mixing up Doughp at our original commercial kitchen in Oakland, I left to grab some lunch at a nearby bakery.</p>
+                    <p>I saw an absolutely delicious-looking red velvet cake in their dessert case and immediately thought: I NEED to know what this tastes like in cookie dough! I bought the cake and mixed it right into a small 5lb batch of Doughp; cream cheese frosting, cake and all! HEAVEN by the spoonful!"</p>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div>
+        <section class="say">
+            <div class="wrapper">
                 <h2>What people are saying</h2>
                 <div class="opinions">
-                    <article>
+                    <blockquote>
                         <p>"It’s just so Doughp! I didn’t know what to expect, but I am so addicted now. Every flavor was delicious and I honestly can’t wait to try even more!"</p>
-                        <p>Andrew J.</p>
-                    </article>
+                        <cite>Andrew J.</cite>
+                    </blockquote>
 
-                    <article>
+                    <blockquote>
                         <p>"Great product. Absolutely loved Doughp. Tasted great, came quickly and I love a good cause. Was happy I chose the four pack so that I could try a few flavors."</p>
-                        <p>Emely W.</p>
-                    </article>
+                        <cite>Emely W.</cite>
+                    </blockquote>
 
-                    <article>
+                    <blockquote>
                         <p>"Life changing! This is something you absolutely need to indulge in. Our entire family is obsessed."</p>
-                        <p>Ana S.</p>
-                    </article>
+                        <cite>Ana S.</cite>
+                    </blockquote>
 
                 </div>
                 
@@ -84,30 +85,30 @@
         </section>
 
         <section>
-            <div>
+            <div class="wrapper try">
                 <h2>Try it with...</h2>
                 <div class="flavours">
                     <article>
-                        <img src="images/ride-or-die.webp" alt="Image with a black background featuring the ride or die chocolate chip cookie dough">
+                        <img  src="images/ride-or-die.webp" alt="Image with a black background featuring the ride or die chocolate chip cookie dough">
                         <h3>Ride or Die</h3>
-                        <p>$17.00</p>
+                        <p class="price">$17.00</p>
                     </article>
 
                     <article>
-                        <img src="images/brownie-beast.webp" alt="Image with a black background featuring the brownie beast chocolate brownie cookie dough">
+                        <img  src="images/brownie-beast.webp" alt="Image with a black background featuring the brownie beast chocolate brownie cookie dough">
                         <h3>Brownie Beast</h3>
-                        <p>$17.00</p>
+                        <p class="price">$17.00</p>
                     </article>
                     <article>
-                        <img src="images/cookie-monsta.webp" alt="Image with a black background featuring the cookie monsta cookies and cream cookie dough">
+                        <img  src="images/cookie-monsta.webp" alt="Image with a black background featuring the cookie monsta cookies and cream cookie dough">
                         <h3>Cookie Monsta</h3>
-                        <p>$17.00</p>
+                        <p class="price">$17.00</p>
                     </article>
 
                     <article>
-                        <img src="images/smores.webp" alt="Image with a black background featuring the want s'more chocolate smore cookie dough">
+                        <img  src="images/smores.webp" alt="Image with a black background featuring the want s'more chocolate smore cookie dough">
                         <h3>Want S'more?</h3>
-                        <p>$17.00</p>
+                        <p class="price">$17.00</p>
                     </article>
                 </div>
             </div>

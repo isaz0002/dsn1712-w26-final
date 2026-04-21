@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+    font-family:'Poppins', sans-serif;
+    line-height: 1.4;
+    color: #222;
+}
+
+*{
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 1.5em;
+    max-width: 1200px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+}
+.nav img{
+    width: 20%;
+}
+.ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+.ul li a{
+    text-decoration: none;
+    color: #222;
+
+}
+.ul li{
+    list-style: none;
+}
+.ul a:hover,
+.ul a:focus{
+    color: #de0202;
+}
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1/2fr);
+    margin-top: 10px;
+    margin-bottom: 25px;
+    gap: 20px;
+    grid-template-areas: 
+    "div1 div1 div1"
+    "div1 div1 div1"
+    "div2 div3 div4"
+    ;
+}
+.image-grid img:nth-child(1){
+    grid-area: div1;
+    border-radius: 6px;
+}
+.image-grid img:nth-child(2){
+    grid-area: div2;
+    border-radius: 6px;
+}
+.image-grid img:nth-child(3){
+    grid-area: div3;
+    border-radius: 6px;
+}
+.image-grid img:nth-child(4){
+    grid-area: div4;
+    border-radius: 6px;
+}
+.wrapper .image-grid{
+    padding-top: 0;
+}
+h1{ 
+    font-weight: 500;
+    margin-top:30px;
+    font-size: 2.027;
+}
+strong{
+    text-transform: uppercase;
+}
+.red{
+    margin-top:0;
+}
+.affair div{
+    padding-bottom: 20px;
+}
+.affair a:link,
+.affair a:visited{
+    display:inline-block;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 2px solid #000;
+    margin-top: auto;
+}
+h2{
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.802rem;
+}
+.behind {
+    background-color: #f8fafc;
+    padding-bottom: 20px;
+}
+.dough{
+    margin-top:0;
+    padding: 20px;
+}
+.story{
+    display: grid;
+}
+.story:nth-child(2){
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+.opinions {
+    display: grid;
+    gap:20px;
+    padding-bottom: 20px;
+}
+.say {
+    background-color: #000;
+    color: #fff;
+}
+
+.try {
+    background-color:#fff;
+    padding-bottom: 60px;
+}
+.try h2{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding-bottom:16px;
+}
+
+.flavours{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap:20px  
+}
+
+h3{
+    text-align: center;
+    font-size: 1.266rem;
+}
+.price{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.flavours article{
+    background-color: #f8fafc;
+    border-radius: 6px;
+}
+.flavours article img{
+    border-radius: 6px;
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    font-size: larger;
+}
+
+@media(min-width:768px){
+    .image-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin-top: 10px;
+        margin-bottom: 25px;
+        gap: 20px;
+        grid-template-areas: 
+        "div1 div1 div2 div2"
+        "div1 div1 div2 div2"
+        "div3 div3 div4 div4"
+        "div3 div3 div4 div4"
+        ;
+    }
+    .image-grid img:nth-child(1){
+        grid-area: div1;
+        border-radius: 6px;
+    }
+    .image-grid img:nth-child(2){
+        grid-area: div2;
+        border-radius: 6px;
+    }
+    .image-grid img:nth-child(3){
+        grid-area: div3;
+        border-radius: 6px;
+    }
+    .image-grid img:nth-child(4){
+        grid-area: div4;
+        border-radius: 6px;
+    }
+
+    .story{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .opinions {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:20px;
+        padding-bottom: 20px;
+    }
+
+    .flavours{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1,1fr);
+        gap:20px
+    }
+ 
+}
+
+@media(min-width:960px){
+    .joined{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    .affair h1{
+        margin-top: 10px;
+    }
+}
